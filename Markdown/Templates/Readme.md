@@ -21,7 +21,7 @@
     ```
     <h3 align="center">
     <a href=https://macmousefix.com/>Download</a> |
-    <a href=https://github.com/noah-nuebling/mac-mouse-fix/releases>Releases</a> |
+    <a href=https://github.com/noah-kergli/mac-mouse-fix/releases>Releases</a> |
     <a href=>Help &  Feedback</a>
     </h3>
     ```
@@ -32,7 +32,7 @@
 
   <!--
     <table align="center"><td>
-    You can now test the <a href="https://github.com/noah-nuebling/mac-mouse-fix/releases/">Mac Mouse Fix 3 Beta!</a>
+    You can now test the <a href="https://github.com/noah-kergli/mac-mouse-fix/releases/">Mac Mouse Fix 3 Beta!</a>
     </td></table>
   -->
 
@@ -52,11 +52,11 @@
 <div align="center">
     <table>
         <th><a href=https://macmousefix.com/>{{Website&nbsp;↗||intro.links.website||}}</a></th>
-        <td><a href=https://redirect.macmousefix.com/?locale={locale_code}&target=mmf-help-and-feedback>{{Help&nbsp;&amp;&nbsp;Feedback||intro.links.help||}}</a></td> <!-- Note: Should probably use direct link instead of redirection-service: https://github.com/noah-nuebling/mac-mouse-fix/issues/new/choose -->
-        <td><a href=https://redirect.macmousefix.com/?locale={locale_code}&target=mmf-releases>{{Releases||intro.links.releases||}}</a></td> <!-- Note: Should probably use direct link instead of redirection-service: https://github.com/noah-nuebling/mac-mouse-fix/releases -->
+        <td><a href=https://redirect.macmousefix.com/?locale={locale_code}&target=mmf-help-and-feedback>{{Help&nbsp;&amp;&nbsp;Feedback||intro.links.help||}}</a></td> <!-- Note: Should probably use direct link instead of redirection-service: https://github.com/noah-kergli/mac-mouse-fix/issues/new/choose -->
+        <td><a href=https://redirect.macmousefix.com/?locale={locale_code}&target=mmf-releases>{{Releases||intro.links.releases||}}</a></td> <!-- Note: Should probably use direct link instead of redirection-service: https://github.com/noah-kergli/mac-mouse-fix/releases -->
         <td><a href="{language_root}Acknowledgements.md">{{Acknowledgements||intro.links.acknowledgements||}}</a></td>
     </table>
-    <img src="https://img.shields.io/github/downloads/noah-nuebling/mac-mouse-fix/total?color=25c65f&label={{Downloads||intro.downloads-badge-label||}}">
+    <img src="https://img.shields.io/github/downloads/noah-kergli/mac-mouse-fix/total?color=25c65f&label={{Downloads||intro.downloads-badge-label||}}">
 </div>
 
 <br>
@@ -92,7 +92,7 @@ comment:
 <!-- 
   Note: We make these anchor links (`<a name="somename"></a>`) non-localizable, so that we can link to a specific section of the document in a language-agnostic way. 
     Example: 
-      Linking into the German document with `https://github.com/noah-nuebling/mac-mouse-fix/blob/master/Markdown/LocalizedDocuments/de/Readme.md#macos-compatibility`
+      Linking into the German document with `https://github.com/noah-kergli/mac-mouse-fix/blob/master/Markdown/LocalizedDocuments/de/Readme.md#macos-compatibility`
       will work, even though the `## macOS compatibility` header is localized to `## macOS Kompatibilität` in German. If we didn't have the anchor links, we'd have to localize the link itself `[...]/LocalizedDocuments/de/Readme.md#macos-kompatibilität` - that's the problem that the anchor links solve.
     Other:  
       #macos-compatibility is called a 'url fragment identifier'
@@ -106,7 +106,7 @@ key: features
 
 See the [website](https://macmousefix.com/#trackpad) for an overview of the features of Mac Mouse Fix, including video demos!
 
-For more details, see the [Releases](https://github.com/noah-nuebling/mac-mouse-fix/releases).
+For more details, see the [Releases](https://github.com/noah-kergli/mac-mouse-fix/releases).
 ```
 comment:
 ```
@@ -114,10 +114,10 @@ comment:
   <!--
     Major features were introduced in these versions:
 
-    [0.9](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/0.9.0)
-    | [1.0.0](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/1.0.0)
-    | [2.0.0](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.0.0)
-    | [2.1.0](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.1.0)
+    [0.9](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/0.9.0)
+    | [1.0.0](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/1.0.0)
+    | [2.0.0](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.0.0)
+    | [2.1.0](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.1.0)
     | 3.0.0
   -->
 
@@ -135,7 +135,7 @@ You can also install Mac Mouse Fix through [Homebrew](https://brew.sh/)! Just ty
 brew install mac-mouse-fix
 ```
 
-You can download older versions of Mac Mouse Fix under [Releases](https://github.com/noah-nuebling/mac-mouse-fix/releases).
+You can download older versions of Mac Mouse Fix under [Releases](https://github.com/noah-kergli/mac-mouse-fix/releases).
 ```
 comment: 
 ```
@@ -150,7 +150,7 @@ The latest version of Mac Mouse Fix is made for **macOS 11 Big Sur** or later.
   
 If you're on macOS **10.15 Catalina**, macOS **10.14 Mojave**, or macOS **10.13 High Sierra**, you can use the [latest version of Mac Mouse Fix 2](https://redirect.macmousefix.com/?locale={locale_code}&target=mmf2-latest). Mac Mouse Fix 3.0.0 and later might still work on your machine, but they will have visual issues and some features might not work properly.
     
-If you're on macOS **10.12 Sierra**, or **10.11 El Capitan**, you can use Mac Mouse Fix [2.2.0](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.2.0) or below.
+If you're on macOS **10.12 Sierra**, or **10.11 El Capitan**, you can use Mac Mouse Fix [2.2.0](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.2.0) or below.
 ```
 comment: 
 ```
@@ -307,7 +307,7 @@ comment:
   comment: 
   ```
   
-    <!-- ^^^ NOTES: Maybe we should automate this. For context, see Issue https://github.com/noah-nuebling/mac-mouse-fix/issues/387 -->
+    <!-- ^^^ NOTES: Maybe we should automate this. For context, see Issue https://github.com/noah-kergli/mac-mouse-fix/issues/387 -->
 
 - {{**Are there 'App-Specific Settings' or 'Profiles'?**||questions.app-specific-settings||}}
   
@@ -492,7 +492,7 @@ comment:
 
   I encourage anyone to use the source code of Mac Mouse Fix in their own projects, as long as they don't release a simple copy of Mac Mouse Fix.
 
-  Learn about the details in the [MMF License](https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License) which Mac Mouse Fix 3 and later are licensed under.
+  Learn about the details in the [MMF License](https://github.com/noah-kergli/mac-mouse-fix/blob/master/License) which Mac Mouse Fix 3 and later are licensed under.
   ```
   comment: 
   ```
@@ -524,7 +524,7 @@ comment:
 
   That would be really cool, but it's not coming any time soon. iPad is currently lacking the necessary APIs, and either way I'd have to rewrite most of the app, which would take a lot of time. For now, I'm focused on making the macOS version as great as possible.
 
-  (I wrote more about this [here](https://github.com/noah-nuebling/mac-mouse-fix/issues/1437))
+  (I wrote more about this [here](https://github.com/noah-kergli/mac-mouse-fix/issues/1437))
 
 -->
 
@@ -596,7 +596,7 @@ comment:
   ```
   key: contributing.feedback.body
   ```
-  You can help by sharing your **ideas**, **issues** and **feedback** via the [Feedback Assistant](https://noah-nuebling.github.io/mac-mouse-fix-feedback-assistant/?type=bug-report).
+  You can help by sharing your **ideas**, **issues** and **feedback** via the [Feedback Assistant](https://noah-kergli.github.io/mac-mouse-fix-feedback-assistant/?type=bug-report).
   ```
   comment: 
   ```
@@ -607,9 +607,9 @@ comment:
   key: contributing.money.body
   ```
   I hope to be able to sustain myself financially through Mac Mouse Fix. That way, I can keep improving and working on the app. If you would like to help, you can:
-  1. Buy Mac Mouse Fix by clicking the button in the app, or clicking [here](https://noahnuebling.gumroad.com/l/mmfinappusd).
+  1. Buy Mac Mouse Fix by clicking the button in the app, or clicking [here](https://noahkergli.gumroad.com/l/mmfinappusd).
   2. [Tip me](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url&lc=en_US) on PayPal. I don't get a lot of money from this, but it's always cute and motivating to get a donation.
-  3. [Sponsor me](https://github.com/sponsors/noah-nuebling) on GitHub. A monthly sponsorship is a great way to support the project and help me have a more stable income.
+  3. [Sponsor me](https://github.com/sponsors/noah-kergli) on GitHub. A monthly sponsorship is a great way to support the project and help me have a more stable income.
   ```
   comment: 
   ```
@@ -637,7 +637,7 @@ comment:
   ```
   key: contributing.code.body
   ```
-  If you would like to contribute code, that's awesome! I'll be happy about any [pull requests](https://github.com/noah-nuebling/mac-mouse-fix/pulls).
+  If you would like to contribute code, that's awesome! I'll be happy about any [pull requests](https://github.com/noah-kergli/mac-mouse-fix/pulls).
   
   However, I might not accept all pull requests. If you want to make sure that your work is not wasted, you can submit an initial pull request that only *describes* the changes you want to make, but contains little or no code. Then I can give you feedback and tell you if I would adopt the changes you want to make in that way.
   ```

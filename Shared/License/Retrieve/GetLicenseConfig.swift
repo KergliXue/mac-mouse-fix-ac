@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // GetLicenseConfig.swift
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2024
-// Licensed under Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2024
+// Licensed under Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -52,7 +52,7 @@
         ///                     1. Download the licenseConfig from macmousefix.com - which is hosted by GitHub, owned by Microsoft.
         ///                     2. Ask the Gumroad API whether the licenseKey is valid - which is probably hosted by AWS or Azure or something.
         ///                 AFAIK there is a possibility that any of the involved parties could track MMF user's behavior due to these web-requests. Gumroad could've possibly even correlated the licenseKey to personal data. (Since Gumroad handles payments and generation of the licenseKeys.)
-        ///                 See https://github.com/noah-nuebling/mac-mouse-fix/issues/976
+        ///                 See https://github.com/noah-kergli/mac-mouse-fix/issues/976
         ///         There are three pieces of data that our licensing-logic uses:
         ///             1. `MFLicenseState`
         ///             2. `MFLicenseConfig`

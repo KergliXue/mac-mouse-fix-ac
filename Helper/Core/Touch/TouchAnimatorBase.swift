@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // TouchAnimatorBase.swift
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2022
-// Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2022
+// Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -82,7 +82,7 @@ import QuartzCore
     @objc override init() {
         
         self.displayLink = DisplayLink(optimizedFor: kMFDisplayLinkWorkTypeEventSending /*kMFDisplayLinkWorkTypeGraphicsRendering*/)
-//        self.animatorQueue = DispatchQueue(label: "com.nuebling.mac-mouse-fix.animator", qos: .userInteractive , attributes: [], autoreleaseFrequency: .inherit, target: nil)
+//        self.animatorQueue = DispatchQueue(label: "com.kergli.mac-mouse-fix.animator", qos: .userInteractive , attributes: [], autoreleaseFrequency: .inherit, target: nil)
         
         super.init()
     }

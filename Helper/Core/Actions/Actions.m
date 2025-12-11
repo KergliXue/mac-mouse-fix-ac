@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // Actions.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2020
-// Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2020
+// Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -55,12 +55,12 @@
             ///             [Aug 2025] Not doing that for the 3.0.6 hotfix, since it would require increasing the config-version, and I'm too lazy for that.
             ///     Bugs:
             ///         - macOS `Mouse Shortcuts` interfere if we simulate MB 4/5.
-            ///             See: https://github.com/noah-nuebling/mac-mouse-fix/issues/1521
+            ///             See: https://github.com/noah-kergli/mac-mouse-fix/issues/1521
             ///             Solution Ideas: - Send at different eventTap - User feedback ala Swish - Simulate navigationSwipes where possible - Some other hacks to keep macOS from diverting the events.
             ///
             
             /// Dispatch to mainThread
-            ///     [Aug 2025] Run on the mainThread since `MFEmulateNSMenuItemRemapping()` uses TIS API stuff which wants to run on the mainThread. (And this method is called by Buttons.swift which seems to call on the mainThread for some triggers (observed: .release), but calls on `com.nuebling.mac-mouse-fix.buttons` queue for other triggers (observed: .levelExpired))
+            ///     [Aug 2025] Run on the mainThread since `MFEmulateNSMenuItemRemapping()` uses TIS API stuff which wants to run on the mainThread. (And this method is called by Buttons.swift which seems to call on the mainThread for some triggers (observed: .release), but calls on `com.kergli.mac-mouse-fix.buttons` queue for other triggers (observed: .levelExpired))
             ///         Idea: Perhaps we could optimize by only dispatching to mainThread if we really end up calling TIS APIs.
             dispatch_async(dispatch_get_main_queue(), ^{
             

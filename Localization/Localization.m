@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // Localization.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2025
-// Licensed under Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2025
+// Licensed under Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -18,14 +18,18 @@
 NSString *_MFLocalizedString(NSString *key) {
     
     /// `annotation-discussion`
-    ///     We override the default swizzling-based annotation (See `enableAutomaticAnnotation`) and then do the annotation manually, (using `temporarilyDisableAutomaticAnnotation:` and `stringByAnnotatingString:` – see below) because the annotation needs to happen *after* the `english_string` fallback logic.
+    ///     We override the default swizzling-based annotation (See `enableAutomaticAnnotation`) and then do the annotation manually, (using `temporarilyDisableAutomaticAnnotation:` and `stringByAnnotatingString:` – see below) because the annotation needs to happen *after* the `english_string` fallback logic.
     ///     Simplification ideas:
-    ///         - We cannot move all this logic into `_MFLocalizedString` because localized strings loaded by IB don't call `_MFLocalizedString` (only our source-code does) – we need swizzling for that.
-    ///         - We could   move all this logic into the swizzle of `localizedStringForKey:value:table:` – that would simplify things.
+    ///         - We cannot move all this logic into `_MFLocalizedString` because localized strings loaded by IB don't call `_MFLocalizedString` (only our source-code does) – we need swizzling for that.
+    ///         - We could   move all this logic into the swizzle of `localizedStringForKey:value:table:` – that would simplify things.
     ///             Reasons why we don't do this: I'm a bit uncomfortable swizzling in production code? Is it slow? Does our implementation have bugs? Also it would make the recent refactor to MFLocalizedString kinda pointless. (We could've just stuck with NSLocalizedString). So maybe sunk-cost-fallacy. [Oct 2025]
     
+    /// Force English language - always use English bundle
+    NSBundle *englishBundle = [NSBundle bundleWithPath: [NSBundle.mainBundle pathForResource: @"en" ofType: @"lproj"] ?: @""];
+    assert(englishBundle);
+    
     [LocalizedStringAnnotation temporarilyDisableAutomaticAnnotation: YES]; /// Turn off the swizzling-based annotation see `annotation-discussion` above.
-    NSString *result = [NSBundle.mainBundle localizedStringForKey: key value: @"" table: nil];
+    NSString *result = [englishBundle localizedStringForKey: key value: @"" table: nil];
     [LocalizedStringAnnotation temporarilyDisableAutomaticAnnotation: NO];
         
     /// Fall back to english string if localization is not available. (By default, it falls back to the string-key)

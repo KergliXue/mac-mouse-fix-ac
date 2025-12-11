@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // EventUtility.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2022
-// Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2022
+// Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -36,7 +36,7 @@ bool CGEvent_IsWacomEvent(CGEventRef event) {
     /// Determine if event comes from Wacom device
     /// Discussion:
     ///     - This is used in the eventTapCallback of `Scroll.m` [Jul 2025]
-    ///     - This is aimed at fixing interference with Wacom Tablets. Should solve https://github.com/noah-nuebling/mac-mouse-fix/issues/1233
+    ///     - This is aimed at fixing interference with Wacom Tablets. Should solve https://github.com/noah-kergli/mac-mouse-fix/issues/1233
     ///     - Testing results: This successfully fixes scrolling in my testing. I didn't test other wacom features. The driver always crashed when I tried to send keyboard shortcuts via the ExpressKeys.
     ///         Tested: Wacom Intuos S CTL-4100, Tablet Driver Version 6.4.10-3, macOS Sequoia 15.5, Intel Mac Mini 2018
     ///     - Scope and Long term plans:
@@ -50,7 +50,7 @@ bool CGEvent_IsWacomEvent(CGEventRef event) {
     ///     - How do other apps do this?
     ///         I looked at LinearMouse and MOS source code to see if they're filtering drawing tablets, but I couldn't see anything specific.
     ///         Update: [Jul 2025] Tested the Wacom with MOS and scrolling got super fast – so no filtering in place.
-    ///         Update: [Aug 2025] MMF 2.2.1 actually implemented a fix for this that I forgot about ?? (See 2.2.1 update notes: https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.2.1)
+    ///         Update: [Aug 2025] MMF 2.2.1 actually implemented a fix for this that I forgot about ?? (See 2.2.1 update notes: https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.2.1)
     ///             But from what I can tell, the 'fix' was checking `kCGTabletEventDeviceID` and that code is still active in MMF 3, so perhaps it just didn't fix things. .. Or Wacom changed their events and broke the fix or something?
     ///     Also see:
     ///         - `EventLoggerForBrad > Investigate_Wacom.m`

@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // LicenseToasts.swift
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2024
-// Licensed under Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2024
+// Licensed under Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -44,7 +44,7 @@ import Foundation
             default: /// Default case: I think this can only happen if we forget to update this switch-statement after adding a new override.
                 assert(false)
                 DDLogError("Mac Mouse Fix appears to be licensed due to an override, but the specific override is not known:\n\(override)")
-                message = "This license could not be activated but Mac Mouse Fix appears to be licensed due to some special condition that I forgot to write a message for. (Please [report this](https://noah-nuebling.github.io/mac-mouse-fix-feedback-assistant/?type=bug-report) as a bug. Thank you!)"
+                message = "This license could not be activated but Mac Mouse Fix appears to be licensed due to some special condition that I forgot to write a message for. (Please [report this](https://noah-kergli.github.io/mac-mouse-fix-feedback-assistant/?type=bug-report) as a bug. Thank you!)"
             }
             
         } else {
@@ -140,7 +140,7 @@ import Foundation
         ///     Notes:
         ///     - Why are we using `self.view.window!` here, and `MainAppState.shared.window` in other places?
         ///         IIRC `MainAppState` is safer and works in more cases whereas self.view.window might be nil in more edge cases IIRC (e.g. when the LicenseSheet is just being loaded or sth? I don't know anymore.)
-        ///         Update [Aug 2025] `self.view.window!` seems to have caused this crash report on Tahoe Beta 5: https://github.com/noah-nuebling/mac-mouse-fix/issues/1432#issuecomment-3157295471
+        ///         Update [Aug 2025] `self.view.window!` seems to have caused this crash report on Tahoe Beta 5: https://github.com/noah-kergli/mac-mouse-fix/issues/1432#issuecomment-3157295471
         ///             > Swapped for `MainAppState.shared.window`. Now *all* uses of `[ToastNotificationController attachNotificationWithMessage:]` use `MainAppState.shared.window`. We could just build it into `[ToastNotificationController attachNotificationWithMessage:]`.
         ///        >>> Update: [Oct 2025] Moved this all into `ToastController` (Formerly ToastNotificationController) –– Can delete this discussion
 

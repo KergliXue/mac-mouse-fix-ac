@@ -22,7 +22,7 @@ import ReactiveSwift
     @objc var window: ResizingTabWindow? {
         
         /// Notes:
-        ///     Not sure what we're doing here. `NSApp.mainWindow` was nil under obscure circumstances (see https://github.com/noah-nuebling/mac-mouse-fix/issues/735) so we added the `ResizingTabWindowController.window` stuff.
+        ///     Not sure what we're doing here. `NSApp.mainWindow` was nil under obscure circumstances (see https://github.com/noah-kergli/mac-mouse-fix/issues/735) so we added the `ResizingTabWindowController.window` stuff.
         ///     Update: [Jun 6 2025] Over the last months I saw LicenseSheetController.add() and LicenseSheetController.remove() fail in the debugger and in reports from users. I suspect this was because we were still using NSApp.mainWindow instead of MainAppState.shared.window. I now replaced all uses of NSApp.mainWindow across the app (I think). Maybe we should disable NSApp.mainWindow to prevent further accidental use.
         ///             Old verbose notes: (Probably delete these.)
         ///                 (On LicenseSheetController.remove():)   [Jan 2025] Just saw this assert(false) with a debugger attached, but didn't investigate further. Didn't see it after, so seems to be very rare.

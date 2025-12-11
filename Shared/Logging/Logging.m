@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // Logging.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2024
-// Licensed under Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2024
+// Licensed under Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -28,9 +28,9 @@
     ///     Notes:
     ///     - This should log to console and terminal and be faster than the old methods. ([Apr 2025] What are the 'old methods'?)
     ///     - Specifying a subsystem and category allows us to configure logging using `Info.plist > OSLogPreferences`
-    ///         > Also See: https://github.com/noah-nuebling/notes-public/blob/main/mmf/error-logging-improvement-ideas_oct-2024.md
+    ///         > Also See: https://github.com/noah-kergli/notes-public/blob/main/mmf/error-logging-improvement-ideas_oct-2024.md
     
-    #define kMFOSLogSubsystem   @"com.nuebling.mac-mouse-fix"
+    #define kMFOSLogSubsystem   @"com.kergli.mac-mouse-fix"
     #define kMFOSLogCategory    @"main-category"
     DDOSLogger *logger = [[DDOSLogger alloc] initWithSubsystem: kMFOSLogSubsystem category: kMFOSLogCategory logLevelMapper: [[DDOSLogLevelMapperDefault alloc] init]];
     [DDLog addLogger: logger];

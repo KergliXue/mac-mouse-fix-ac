@@ -39,7 +39,7 @@ Tento dokument je přeložen do jazyka `93%`
     ```
     <h3 align="center">
     <a href=https://macmousefix.com/>Download</a> |
-    <a href=https://github.com/noah-nuebling/mac-mouse-fix/releases>Releases</a> |
+    <a href=https://github.com/noah-kergli/mac-mouse-fix/releases>Releases</a> |
     <a href=>Help &  Feedback</a>
     </h3>
     ```
@@ -50,7 +50,7 @@ Tento dokument je přeložen do jazyka `93%`
 
   <!--
     <table align="center"><td>
-    You can now test the <a href="https://github.com/noah-nuebling/mac-mouse-fix/releases/">Mac Mouse Fix 3 Beta!</a>
+    You can now test the <a href="https://github.com/noah-kergli/mac-mouse-fix/releases/">Mac Mouse Fix 3 Beta!</a>
     </td></table>
   -->
 
@@ -70,11 +70,11 @@ Tento dokument je přeložen do jazyka `93%`
 <div align="center">
     <table>
         <th><a href=https://macmousefix.com/>Website&nbsp;↗</a></th>
-        <td><a href=https://redirect.macmousefix.com/?locale=cs&target=mmf-help-and-feedback>Help&nbsp;&amp;&nbsp;Feedback</a></td> <!-- Note: Should probably use direct link instead of redirection-service: https://github.com/noah-nuebling/mac-mouse-fix/issues/new/choose -->
-        <td><a href=https://redirect.macmousefix.com/?locale=cs&target=mmf-releases>Verze</a></td> <!-- Note: Should probably use direct link instead of redirection-service: https://github.com/noah-nuebling/mac-mouse-fix/releases -->
+        <td><a href=https://redirect.macmousefix.com/?locale=cs&target=mmf-help-and-feedback>Help&nbsp;&amp;&nbsp;Feedback</a></td> <!-- Note: Should probably use direct link instead of redirection-service: https://github.com/noah-kergli/mac-mouse-fix/issues/new/choose -->
+        <td><a href=https://redirect.macmousefix.com/?locale=cs&target=mmf-releases>Verze</a></td> <!-- Note: Should probably use direct link instead of redirection-service: https://github.com/noah-kergli/mac-mouse-fix/releases -->
         <td><a href="Acknowledgements.md">Poděkování</a></td>
     </table>
-    <img src="https://img.shields.io/github/downloads/noah-nuebling/mac-mouse-fix/total?color=25c65f&label=Download">
+    <img src="https://img.shields.io/github/downloads/noah-kergli/mac-mouse-fix/total?color=25c65f&label=Download">
 </div>
 
 <br>
@@ -104,7 +104,7 @@ Další informace o tom, jak přesně Mac Mouse Fix vylepšuje vaši myš, nalez
 <!-- 
   Note: We make these anchor links (`<a name="somename"></a>`) non-localizable, so that we can link to a specific section of the document in a language-agnostic way. 
     Example: 
-      Linking into the German document with `https://github.com/noah-nuebling/mac-mouse-fix/blob/master/Markdown/LocalizedDocuments/de/Readme.md#macos-compatibility`
+      Linking into the German document with `https://github.com/noah-kergli/mac-mouse-fix/blob/master/Markdown/LocalizedDocuments/de/Readme.md#macos-compatibility`
       will work, even though the `## macOS compatibility` header is localized to `## macOS Kompatibilität` in German. If we didn't have the anchor links, we'd have to localize the link itself `[...]/LocalizedDocuments/de/Readme.md#macos-kompatibilität` - that's the problem that the anchor links solve.
     Other:  
       #macos-compatibility is called a 'url fragment identifier'
@@ -115,15 +115,15 @@ Další informace o tom, jak přesně Mac Mouse Fix vylepšuje vaši myš, nalez
 
 Přehled funkcí Mac Mouse Fix, včetně videoukázek, naleznete na [webové stránce](https://macmousefix.com/#trackpad)!
 
-Další podrobnosti naleznete v [Verzích](https://github.com/noah-nuebling/mac-mouse-fix/releases).
+Další podrobnosti naleznete v [Verzích](https://github.com/noah-kergli/mac-mouse-fix/releases).
 
   <!--
     Major features were introduced in these versions:
 
-    [0.9](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/0.9.0)
-    | [1.0.0](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/1.0.0)
-    | [2.0.0](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.0.0)
-    | [2.1.0](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.1.0)
+    [0.9](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/0.9.0)
+    | [1.0.0](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/1.0.0)
+    | [2.0.0](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.0.0)
+    | [2.1.0](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.1.0)
     | 3.0.0
   -->
 
@@ -138,7 +138,7 @@ Mac Mouse Fix můžete také nainstalovat pomocí [Homebrew](https://brew.sh/)! 
 brew install mac-mouse-fix
 ```
 
-Starší verze Mac Mouse Fix si můžete stáhnout v sekci [Verze](https://github.com/noah-nuebling/mac-mouse-fix/releases).
+Starší verze Mac Mouse Fix si můžete stáhnout v sekci [Verze](https://github.com/noah-kergli/mac-mouse-fix/releases).
 
 <a name="macos-compatibility"></a>
 ## Kompatibilita s macOS
@@ -147,7 +147,7 @@ Nejnovější verze Mac Mouse Fix je určena pro **macOS 11 Big Sur** nebo nově
 
 Pokud používáte macOS **10.15 Catalina**, macOS **10.14 Mojave** nebo macOS **10.13 High Sierra**, můžete použít [nejnovější verzi Mac Mouse Fix 2](https://redirect.macmousefix.com/?locale=cs&target=mmf2-latest). Mac Mouse Fix 3.0.0 a novější mohou na vašem počítači stále fungovat, ale budou mít vizuální problémy a některé funkce nemusí fungovat správně.
 
-Pokud používáte macOS **10.12 Sierra** nebo **10.11 El Capitan**, můžete použít Mac Mouse Fix [2.2.0](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.2.0) nebo starší verzi.
+Pokud používáte macOS **10.12 Sierra** nebo **10.11 El Capitan**, můžete použít Mac Mouse Fix [2.2.0](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.2.0) nebo starší verzi.
 
 <a name="pricing"></a> 
 ## Ceny
@@ -240,7 +240,7 @@ Na [webové stránce](https://macmousefix.com/) najdete sbírku hezkých věcí,
   defaults write com.apple.Dock showAppExposeGestureEnabled -bool TRUE; killall Dock
   ```
   
-    <!-- ^^^ NOTES: Maybe we should automate this. For context, see Issue https://github.com/noah-nuebling/mac-mouse-fix/issues/387 -->
+    <!-- ^^^ NOTES: Maybe we should automate this. For context, see Issue https://github.com/noah-kergli/mac-mouse-fix/issues/387 -->
 
 - Existují "Nastavení specifická pro aplikaci" nebo "Profily"?
   
@@ -358,7 +358,7 @@ Na [webové stránce](https://macmousefix.com/) najdete sbírku hezkých věcí,
   
   Vyzývám každého, aby používal zdrojový kód Mac Mouse Fixu ve svých vlastních projektech, pokud nevydá jen jeho jednoduchou kopii.
   
-  Podrobnosti naleznete v licenci [MMF License](https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License), pod kterou je Mac Mouse Fix 3 a novější licencován.
+  Podrobnosti naleznete v licenci [MMF License](https://github.com/noah-kergli/mac-mouse-fix/blob/master/License), pod kterou je Mac Mouse Fix 3 a novější licencován.
 
     <!--
       , and I don't plan to change that at any point.
@@ -381,7 +381,7 @@ Na [webové stránce](https://macmousefix.com/) najdete sbírku hezkých věcí,
 
   That would be really cool, but it's not coming any time soon. iPad is currently lacking the necessary APIs, and either way I'd have to rewrite most of the app, which would take a lot of time. For now, I'm focused on making the macOS version as great as possible.
 
-  (I wrote more about this [here](https://github.com/noah-nuebling/mac-mouse-fix/issues/1437))
+  (I wrote more about this [here](https://github.com/noah-kergli/mac-mouse-fix/issues/1437))
 
 -->
 
@@ -441,14 +441,14 @@ Ano! Pokud jste darovali přes PayPal, klikněte [sem](Acknowledgements.md) a z�
 
 - **Poskytnutí zpětné vazby**
     
-  Můžete pomoci sdílením svých **nápadů**, **problémů** a **zpětné vazby** prostřednictvím [Asistenta pro zpětnou vazbu](https://noah-nuebling.github.io/mac-mouse-fix-feedback-assistant/?type=bug-report).
+  Můžete pomoci sdílením svých **nápadů**, **problémů** a **zpětné vazby** prostřednictvím [Asistenta pro zpětnou vazbu](https://noah-kergli.github.io/mac-mouse-fix-feedback-assistant/?type=bug-report).
 
 - **Finanční příspěvky**
   
   Doufám, že se díky Mac Mouse Fixu budu moci finančně uživit. Takto se můžu aplikaci dále zlepšovat a pracovat na ní. Pokud byste chtěli pomoci, můžete:
-  1. Koupit Mac Mouse Fix kliknutím na tlačítko v aplikaci nebo kliknutím [sem](https://noahnuebling.gumroad.com/l/mmfinappusd).
+  1. Koupit Mac Mouse Fix kliknutím na tlačítko v aplikaci nebo kliknutím [sem](https://noahkergli.gumroad.com/l/mmfinappusd).
   2. [Dat mi spropitné](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url&lc=en_US) na PayPalu. Nemám z toho moc peněz, ale vždycky je roztomilé a motivující získat dar.
-  3. [Sponzorovat mě](https://github.com/sponsors/noah-nuebling) na GitHubu. Měsíční sponzorství je skvělý způsob, jak podpořit projekt a pomoci mi mít stabilnější příjem.
+  3. [Sponzorovat mě](https://github.com/sponsors/noah-kergli) na GitHubu. Měsíční sponzorství je skvělý způsob, jak podpořit projekt a pomoci mi mít stabilnější příjem.
 
 - **Přidávání překladů**
   
@@ -464,7 +464,7 @@ Ano! Pokud jste darovali přes PayPal, klikněte [sem](Acknowledgements.md) a z�
       I should mention people who contributed code on the acknowledgements page. They are already in the update notes. 
     -->
 
-  Pokud byste chtěli přispět kódem, to je skvělé! Budu rád za jakékoli [pull requesty](https://github.com/noah-nuebling/mac-mouse-fix/pulls).
+  Pokud byste chtěli přispět kódem, to je skvělé! Budu rád za jakékoli [pull requesty](https://github.com/noah-kergli/mac-mouse-fix/pulls).
   
   Nicméně nemusím přijmout všechny pull requesty. Pokud chcete mít jistotu, že vaše práce nepřijde nazmar, můžete odeslat počáteční pull request, který pouze *popisuje* změny, které chcete provést, ale obsahuje málo nebo žádný kód. Pak vám můžu poskytnout zpětnou vazbu a říct vám, zda bych změny, které chcete provést, tímto způsobem přijal.
 

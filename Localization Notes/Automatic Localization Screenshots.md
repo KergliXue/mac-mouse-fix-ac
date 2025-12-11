@@ -6,11 +6,11 @@
 
 So IIRC, we worked on 2 different repos, before merging the results into MMF:
     - **xcode-localization-screenshot-tests**
-        https://github.com/noah-nuebling/xcode-localization-screenshot-tests
+        https://github.com/noah-kergli/xcode-localization-screenshot-tests
         - Here we tried to get Xcode to do it for us (Some WWDC talk said Xcode could do it)
         - But we couldn't get it to work and gave up.
     - **xcode-localization-screenshot-fix**
-        https://github.com/noah-nuebling/xcode-localization-screenshot-fix
+        https://github.com/noah-kergli/xcode-localization-screenshot-fix
         - Here we tried (and succeeded) to implement the feature ourselves.
             - (And before that, we created manual .xcloc files with included screenshots)
         - Also search for `CustomImplForLocalizationScreenshotTest` -> Name of the Xcode project in this repo.
@@ -88,6 +88,6 @@ Found working example of .xcloc file with embedded, inline-viewable, screenshots
 
 ### Links
 
-You can find reference WWDC-screenshots, handcrafted .xcloc examples, and more in our test project: https://github.com/noah-nuebling/xcode-localization-screenshot-fix/tree/745a70bfbedad9e1cdad6e5ee1628534b9acae2a/CustomImplForLocalizationScreenshotTest/Notes/Examples
+You can find reference WWDC-screenshots, handcrafted .xcloc examples, and more in our test project: https://github.com/noah-kergli/xcode-localization-screenshot-fix/tree/745a70bfbedad9e1cdad6e5ee1628534b9acae2a/CustomImplForLocalizationScreenshotTest/Notes/Examples
 
 

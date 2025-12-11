@@ -2,7 +2,7 @@
 
 <!-- ## The guide below will help you grant Accessibility Access to Mac Mouse Fix Helper -->
 
-<!--[Why does Mac Mouse Fix need Accessibility Access?](https://noah-nuebling.github.io/mac-mouse-fix-website/about/)-->
+<!--[Why does Mac Mouse Fix need Accessibility Access?](https://noah-kergli.github.io/mac-mouse-fix-website/about/)-->
 
 To use Mac Mouse Fix you'll have to grant it 'Accessibility Access'.
 In this Guide you'll learn about common issues with granting Accessibility Access and how to solve them.
@@ -19,9 +19,9 @@ In this Guide you'll learn about common issues with granting Accessibility Acces
 
 **References** for writing the [!NOTE] info box:
 
-- 2.2.2 release (Where we implemented an automatic fix for these issues.): https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.2.2
-- 2.2.2 changelog: https://github.com/noah-nuebling/mac-mouse-fix/compare/2.2.1...2.2.2
-- Code comment about the fix only working on 10.15 or later: https://github.com/noah-nuebling/mac-mouse-fix/blob/ad9dde2771c49b5734d6696840c551ba90e88d6f/Helper/Accessibility/AccessibilityCheck.m#L77
+- 2.2.2 release (Where we implemented an automatic fix for these issues.): https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.2.2
+- 2.2.2 changelog: https://github.com/noah-kergli/mac-mouse-fix/compare/2.2.1...2.2.2
+- Code comment about the fix only working on 10.15 or later: https://github.com/noah-kergli/mac-mouse-fix/blob/ad9dde2771c49b5734d6696840c551ba90e88d6f/Helper/Accessibility/AccessibilityCheck.m#L77
 - Enabling MMF Guide where there is a similar infobox: https://redirect.macmousefix.com/?target=mmf-ventura-enabling-guide
 
 
@@ -42,7 +42,7 @@ Sometimes 'Mac Mouse Fix Helper' will show up as enabled in the list at 'System 
 #### Why does this issue occur?
 
 I'm not sure but it seems that sometimes the macOS Accessibility Access database doesn't update properly after you update Mac Mouse Fix. 
-See [this GitHub Issue](https://github.com/noah-nuebling/mac-mouse-fix/issues/412) for more information.
+See [this GitHub Issue](https://github.com/noah-kergli/mac-mouse-fix/issues/412) for more information.
 
 #### Solution
 

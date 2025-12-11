@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // ScrollUtility.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2019
-// Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2019
+// Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -40,7 +40,7 @@ static NSDictionary *_MFScrollPhaseToIOHIDEventPhase;
     /// When multithreading from within `ScrollControl -> eventTapCallback()` events would become invalid and unusable in the new thread.
     /// Using CGEventCreateCopy didn't help, but this does fix the issue. Not sure why.
     /// Xcode Analysis warns of potential memory leak here, even though we have `create` in the name. Maybe we should flag the return with `CF_RETURNS_RETAINED`
-    /// This doesn't produce identically behaving events (See https://github.com/noah-nuebling/mac-mouse-fix/issues/61)
+    /// This doesn't produce identically behaving events (See https://github.com/noah-kergli/mac-mouse-fix/issues/61)
     ///     So we made a more general version of this function, which copies over _all_ fields, at `Utility_HelperApp:createEventWithValuesFromEvent:` ... which couldn't produce identical results either... so we're back to trying to make CGEventCreateCopy work.
     
     CGEventRef newEvent = CGEventCreateScrollWheelEvent(NULL, kCGScrollEventUnitPixel, 1, 0);

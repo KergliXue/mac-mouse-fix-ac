@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // AppDelegate.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2019
-// Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2019
+// Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -179,7 +179,7 @@ static NSDictionary *sideButtonActions;
             ///     References:
             ///         - _WWDC 25 - Build an AppKit app with the new design_ at  at 13:10 (https://developer.apple.com/videos/play/wwdc2025/310/)
             ///         - The `swiftui-test-tahoe-beta` project.
-            ///         - Our purecode rewrite of the Sparke SUUpdateAlert: https://github.com/noah-nuebling/Sparkle/blob/modernize-update-alert/Sparkle/SUUpdateAlert_CodeOnly.m
+            ///         - Our purecode rewrite of the Sparke SUUpdateAlert: https://github.com/noah-kergli/Sparkle/blob/modernize-update-alert/Sparkle/SUUpdateAlert_CodeOnly.m
             ///     Sidenote:
             ///         - I found the `_NSWindowDidBecomeVisible` notification which we're observing here by setting a breakpoint inside `__CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__`
             ///

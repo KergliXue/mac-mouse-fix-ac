@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // ClickCycle.swift
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2022
-// Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2022
+// Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -198,7 +198,7 @@ class ClickCycle: NSObject {
             
             /// ---
             /// Sep 2024 I just saw a crash in the console:
-            /// Thread 5 Crashed::  Dispatch queue: com.nuebling.mac-mouse-fix.buttons
+            /// Thread 5 Crashed::  Dispatch queue: com.kergli.mac-mouse-fix.buttons
             /// ```
             /// Mac Mouse Fix Helper                     0x104873850 Swift runtime failure: Unexpectedly found nil while unwrapping an Optional value + 0 [inlined]
             /// Mac Mouse Fix Helper                     0x104873850 closure #1 in closure #1 in closure #1 in ClickCycle.handleClick(device:button:downNotUp:maxClickLevel:triggerCallback:) + 528

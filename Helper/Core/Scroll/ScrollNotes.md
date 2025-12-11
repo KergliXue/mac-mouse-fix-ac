@@ -18,4 +18,4 @@
     When zoom in Safari and reversing scroll direction mid animation, it janks out more than a Trackpad would. Possibly related to the 'opposite-tick' feature. 
 
 Sidenote: What is the 'opposite-tick' feature?
-    -> It's when you move the scroll wheel one tick in the opposite direction to stop scrolling. We introduced that in [3.0.2](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/3.0.2).
+    -> It's when you move the scroll wheel one tick in the opposite direction to stop scrolling. We introduced that in [3.0.2](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/3.0.2).

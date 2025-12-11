@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // SymbolicHotKeys.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2024
-// Licensed under Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2024
+// Licensed under Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -499,7 +499,7 @@ TISInputSourceRef MFTISCopyKeyboardShortcutInputSourceForKeyboardLayoutInputSour
     ///     Message: `BUG IN CLIENT OF LIBDISPATCH: Assertion failed: Block was expected to execute on queue [com.apple.main-thread (0x20870fdc0)]`
     ///     However, I only saw this happen, if:
     ///         - I have a debugger attached (weird)
-    ///         - This is running on the `com.nuebling.mac-mouse-fix.buttons` queue. (make sense I think? Cause otherwise it was running on the mainthread I think.)
+    ///         - This is running on the `com.kergli.mac-mouse-fix.buttons` queue. (make sense I think? Cause otherwise it was running on the mainthread I think.)
     ///     Relevant note from Apple's TextInputSources.h:
     ///         Mac OS X threading:
     ///         TextInputSources API is not thread safe. If you are a UI application, you must call TextInputSources API on the main thread.

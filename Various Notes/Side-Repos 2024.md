@@ -11,7 +11,7 @@
             This is the origin of `MFDataClass.m`, (our cmark-based) `MarkdownParser.m`, and `MFObserver.m`. 
             We merged `MFDataClass.m` and `MarkdownParser.m` much earlier, but we merged `MFObserver.m` in [Apr 2025].
             Also developed techniques for enabling nullability warnings in Xcode here, which we merged in [Apr 2025]. See `Xcode Nullability Settings.md`.
-        - Link: https://github.com/noah-nuebling/objc-playground-2024
+        - Link: https://github.com/noah-kergli/objc-playground-2024
             - Readme.md contains more context
     - `EventLoggerForBrad`
         - [ ] Merged new Keyboard-Shortcut-Simulator

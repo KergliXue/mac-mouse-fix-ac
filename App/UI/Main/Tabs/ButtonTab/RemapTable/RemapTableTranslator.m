@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // RemapTableDataSource.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2021
-// Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2021
+// Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -81,7 +81,7 @@ static NSArray *getScrollEffectsTable() {
         }},
         @{@"ui": MFLocalizedString(@"scroll-effect.spaces", @""), @"tool": MFLocalizedString(@"scroll-effect.spaces.hint", @""), @"dict": @{
             kMFModifiedScrollDictKeyEffectModificationType: kMFModifiedScrollEffectModificationTypeThreeFingerSwipeHorizontal
-        }}, /// Removed this in 3.0.0 Beta 6 but MAK1023 wanted it back https://github.com/noah-nuebling/mac-mouse-fix/discussions/495. Should remove this once Click and Drag for Spaces & Mission Control is an adequate replacement for MAK1023.
+        }}, /// Removed this in 3.0.0 Beta 6 but MAK1023 wanted it back https://github.com/noah-kergli/mac-mouse-fix/discussions/495. Should remove this once Click and Drag for Spaces & Mission Control is an adequate replacement for MAK1023.
         separatorEffectsTableEntry(),
         @{@"ui": MFLocalizedString(@"scroll-effect.zoom", @""), @"tool": MFLocalizedString(@"scroll-effect.zoom.hint", @"") , @"dict": @{
             kMFModifiedScrollDictKeyEffectModificationType: kMFModifiedScrollEffectModificationTypeZoom
@@ -182,7 +182,7 @@ static NSArray *getOneShotEffectsTable(NSDictionary *rowDict) {
         @{@"ui": MFLocalizedString(@"effect.mission-control", @""), @"tool": MFLocalizedString(@"effect.mission-control.hint", @""), @"dict": @{
                   kMFActionDictKeyType: kMFActionDictTypeSymbolicHotkey,
                   kMFActionDictKeyGenericVariant: @(kMFSHMissionControl)
-        }}, /// I removed actions that are redundant to the Click and Drag for Spaces & Mission Control feature in 3.0.0 Beta 6 but  people complained https://github.com/noah-nuebling/mac-mouse-fix/issues?q=is%3Aissue+label%3A%223.0.0+Beta+6+Removed+Actions%22
+        }}, /// I removed actions that are redundant to the Click and Drag for Spaces & Mission Control feature in 3.0.0 Beta 6 but  people complained https://github.com/noah-kergli/mac-mouse-fix/issues?q=is%3Aissue+label%3A%223.0.0+Beta+6+Removed+Actions%22
         @{
             @"ui": MFLocalizedString(
                 @"effect.app-expose",

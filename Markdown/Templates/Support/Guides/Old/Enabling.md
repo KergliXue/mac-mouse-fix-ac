@@ -15,7 +15,7 @@ Update: Under macOS 15 Sequoia, Apple seems to have fixed these issues! If you'r
 
 **Additional Info**
 
-Overall, I think the the new SMAppService system is a great improvement. It is much easier to use for developers and it gives users a way to see and control which apps run in the background at [System Settings > General > Login Items](https://noah-nuebling.github.io/redirection-service/?target=macos-settings-loginitems).
+Overall, I think the the new SMAppService system is a great improvement. It is much easier to use for developers and it gives users a way to see and control which apps run in the background at [System Settings > General > Login Items](https://noah-kergli.github.io/redirection-service/?target=macos-settings-loginitems).
 
 However, the new SMAppService system unfortunately has some bugs at the moment. Under certain circumstances, such as when you have two different copies of Mac Mouse Fix on your computer, the SMAppService system can get really confused. And then enabling Mac Mouse Fix won't work anymore.
 
@@ -25,7 +25,7 @@ Mac Mouse Fix 3 and later try to automatically detect these issues and provide s
 
 Below, you will find two solutions. You might have to use one or both of the solutions to solve the issue. 
 
-The 1. Solution is simpler and should work in most circumstances. So I recommend starting with that. However, the 1. Solution will enable all "Allow in the Background" items under [System Settings > General > Login Items](https://noah-nuebling.github.io/redirection-service/?target=macos-settings-loginitems). If you'd like to avoid that, you might want to start with the 2. Solution.
+The 1. Solution is simpler and should work in most circumstances. So I recommend starting with that. However, the 1. Solution will enable all "Allow in the Background" items under [System Settings > General > Login Items](https://noah-kergli.github.io/redirection-service/?target=macos-settings-loginitems). If you'd like to avoid that, you might want to start with the 2. Solution.
 
 <!-- 
 
@@ -57,7 +57,7 @@ The Background-App Database of macOS can easily become corrupted, leading to pro
 **Additional Info**
 
 - In case this approach doesn't work, try the **2. Solution**.
-- The `sfltool resetbtm` command will enable all "Allow in the Background" items under [System Settings > General > Login Items](https://noah-nuebling.github.io/redirection-service/?target=macos-settings-loginitems). If you'd like to avoid that, you might want to try the **2. Solution** first.
+- The `sfltool resetbtm` command will enable all "Allow in the Background" items under [System Settings > General > Login Items](https://noah-kergli.github.io/redirection-service/?target=macos-settings-loginitems). If you'd like to avoid that, you might want to try the **2. Solution** first.
 - Apple recommends using the `sfltool resetbtm` command in this [support document](https://support.apple.com/guide/deployment/depdca572563/web), so you can be sure it is safe to use. 
 
 ### 2. Solution: Remove Duplicate Copies of Mac Mouse Fix

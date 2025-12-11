@@ -33,7 +33,7 @@ So Mac Mouse Fix is not notarized, that's why this message appears.
 However, since the Mac Mouse Fix source code is freely available and thousands of people are using it and have the ability to write about their experiences on this GitHub page, you can still be sure that Mac Mouse Fix is safe.
 
 **Update:** Mac Mouse Fix 2.2.4 and later are notarized by Apple, so this message should not appear anymore. \
-I wrote a little bit about the rationale behind notarizing the app in the  [2.2.4](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.2.4) release notes.
+I wrote a little bit about the rationale behind notarizing the app in the  [2.2.4](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.2.4) release notes.
 
 **The solution**
 
@@ -56,13 +56,13 @@ If you are already a Mac Mouse Fix user, you might have encountered messages say
 Mac Mouse Fix version 1.0.3 and below were signed with a 'code signing certificate' which has since been revoked. That's what prompted the messages.
 1.0.4 and above were signed with a new certificate, but after the 2.0 release, that certificate was also revoked. 
 
-[2.1](https://github.com/noah-nuebling/mac-mouse-fix/releases/tag/2.1.0) and later are signed with a new, valid certificate. 
+[2.1](https://github.com/noah-kergli/mac-mouse-fix/releases/tag/2.1.0) and later are signed with a new, valid certificate. 
 
 See #95 to learn more about the issue.
 
 **The solution**
 
-Simply [download](http://noah-nuebling.github.io/mac-mouse-fix-website) the latest version of Mac Mouse Fix. It should open normally.
+Simply [download](http://noah-kergli.github.io/mac-mouse-fix-website) the latest version of Mac Mouse Fix. It should open normally.
 
 
 <br>

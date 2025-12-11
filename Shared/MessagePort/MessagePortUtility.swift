@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // MessagePortUtility.swift
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2022
-// Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2022
+// Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -56,7 +56,7 @@ import ReactiveSwift
         ///     Perhaps there's still some utility in detecting strange helpers to improve edge-cases, but I'm not sure of that, so I'll disable this code now for other macOS versions [Jul 2025]
         ///     Also see `enable-timeout-toast` discussion in `GeneralTabController.swift` where the alert we're creating here is referred to as `is-strange-helper-alert` [Jul 2025]
         ///         Uncertainty: I'm pretty sure that the issue that the `is-strange-helper-alert` was addressing went away at the same time as the issue that the `enable-timeout-toast` was addressing – in macOS 15 Sequoia. But not 100% sure.
-        /// Update: [Jul 17 2025] This issue (https://github.com/noah-nuebling/mac-mouse-fix/issues/1464) in 3.0.5 might have been prevented by disabling strange helpers! Perhaps we should re-enable that feature without calling `AlertCreator.showStrangeHelperMessage()`
+        /// Update: [Jul 17 2025] This issue (https://github.com/noah-kergli/mac-mouse-fix/issues/1464) in 3.0.5 might have been prevented by disabling strange helpers! Perhaps we should re-enable that feature without calling `AlertCreator.showStrangeHelperMessage()`
         /// Update: [Sep 11 2025]... I re-enabled this feature on all macOS versions, in (3638e9ecf431a80eb7d5a392b64d1051c8dfe663) but without calling `AlertCreator.showStrangeHelperMessage()` on all of them.
         ///     Here's another note I wrote elsewhere about why re-enabling the feature is good:
         ///         [Sep 2025] On macOS 15.0 and 26.0 when this code was disabled, there could be weird situations where the `AuthorizeAccessibilitySheet` shows up for the strange helper and then you end up granting the wong helper AX access. -> This has been frustrating during development of the localization screenshot stuff. Might cause issues for users too in some edge-cases.

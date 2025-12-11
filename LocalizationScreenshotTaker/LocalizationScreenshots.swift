@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // LocalizationScreenshots.swift
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2024
-// Licensed under Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2024
+// Licensed under Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -526,7 +526,7 @@ final class LocalizationScreenshotClass: XCTestCase {
             /// Sidenote:
             ///     [Aug 2025] I tried to define `CapturedButtonsGuideMMF3_ScreenshotRemaps` as Swift by converting the plist to Swift source code via plutil, but plutil converted empty dict to empty array which made MMF crash.
         
-            let configURL = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!.appending(path: "/com.nuebling.mac-mouse-fix/config.plist")
+            let configURL = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!.appending(path: "/com.kergli.mac-mouse-fix/config.plist")
             let remapsOverrideURL = URL(fileURLWithPath: currentFilePath().deletingLastPathComponent + "/CapturedButtonsGuideMMF3_ScreenshotRemaps.plist")
 
             let remaps = NSDictionary(contentsOf: remapsOverrideURL)!                                      /// Read
@@ -773,7 +773,7 @@ final class LocalizationScreenshotClass: XCTestCase {
         else {
         
             if (url == sharedf_helper_url()) {
-                sharedf_clt("launchctl remove com.nuebling.mac-mouse-fix.helper") /// Prevent launchd from restarting the helper
+                sharedf_clt("launchctl remove com.kergli.mac-mouse-fix.helper") /// Prevent launchd from restarting the helper
             }
         
             let xcapp = XCUIApplication(url: url)

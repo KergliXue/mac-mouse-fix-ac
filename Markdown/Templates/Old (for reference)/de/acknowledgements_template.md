@@ -40,7 +40,7 @@ Diese Leute haben viel mehr als den Standardpreis ausgegeben und mir einen **ung
 
 ### ❤️ GitHub Sponsoren
 
-Riesiges Dankeschön an [alle](https://github.com/sponsors/noah-nuebling#sponsors) die mich auf GitHub sponsern! Hoffentlich kann ich mir eines Tages dank euch die Milchshakefabrik kaufen. :)
+Riesiges Dankeschön an [alle](https://github.com/sponsors/noah-kergli#sponsors) die mich auf GitHub sponsern! Hoffentlich kann ich mir eines Tages dank euch die Milchshakefabrik kaufen. :)
 
 
 ### ✨ PayPal Spenden
@@ -58,7 +58,7 @@ Viele großzügige Leute haben mir auf PayPal Milchshakes spendiert, als Mac Mou
 - [SensibleSideButtons](https://github.com/archagon/sensible-side-buttons) - Ich habe den Code für eine frühe Implementierung der Funktion "Gehe eine Seite vor/zurück in Safari und anderen Apps" von SensibleSideButtons kopiert und bin dadurch auch auf das Calftrail Touch-Projekt gestoßen.
 - [MOS](https://mos.caldis.me/) - Viele Funktionen von Mac Mouse Fix, wie die Option "Hohe Scroll-Flüssigkeit" und die Implementierung des "App-spezifische Einstellungen" features, wurden von MOS inspiriert.
 - [Gifski](https://github.com/sindresorhus/Gifski) - Hat das Design und den Inhalt des [Readme.md](<{language_root}Readme.md>) von Mac Mouse Fix stark inspiriert.
-- [Vue Issue Helper](https://new-issue.vuejs.org/) - Grundlage für das Design und die technische Umsetzung von [Mac Mouse Fix Feedback Assistant](https://noah-nuebling.github.io/mac-mouse-fix-feedback-assistant/).
+- [Vue Issue Helper](https://new-issue.vuejs.org/) - Grundlage für das Design und die technische Umsetzung von [Mac Mouse Fix Feedback Assistant](https://noah-kergli.github.io/mac-mouse-fix-feedback-assistant/).
 
 Mac Mouse Fix wurde mithilfe dieser **hervorragenden Softwarebibliotheken** erstellt:
 
@@ -69,6 +69,6 @@ Mac Mouse Fix wurde mithilfe dieser **hervorragenden Softwarebibliotheken** erst
 - [MASShortcut](https://github.com/shpakovski/MASShortcut) - API und Benutzeroberfläche zum Aufzeichnen, Speichern und Verwenden systemweiter Tastenkürzel
 - [CGSInternal](https://github.com/NUIKit/CGSInternal) - Eine Sammlung privater CoreGraphics-Routinen
 - Abhängigkeiten der Skripte von Mac Mouse Fix:<br>
-  [Update- und Statistikskripte](https://github.com/noah-nuebling/mac-mouse-fix/blob/update-feed/requirements.txt) | [Markdown-Generierungsskript]({repo_root}Markdown/Code/python_requirements.txt) | [.strings-Datei Synchronisierungsskript]({repo_root}Localization/Code/UpdateStrings/requirements.txt) | ["State of Localization"-Skript]({repo_root}Localization/Code/StateOfLocalization/requirements.txt)
-- Abhängigkeiten der [Mac Mouse Fix Feedback Assistant](https://noah-nuebling.github.io/mac-mouse-fix-feedback-assistant/) Web-App [hier](https://github.com/noah-nuebling/mac-mouse-fix-feedback-assistant/blob/master/package.json)
-- Abhängigkeiten der [Mac Mouse Fix Website](https://noah-nuebling.github.io/mac-mouse-fix-website/) findest du [hier](https://github.com/noah-nuebling/mac-mouse-fix-website/blob/main/package.json)
+  [Update- und Statistikskripte](https://github.com/noah-kergli/mac-mouse-fix/blob/update-feed/requirements.txt) | [Markdown-Generierungsskript]({repo_root}Markdown/Code/python_requirements.txt) | [.strings-Datei Synchronisierungsskript]({repo_root}Localization/Code/UpdateStrings/requirements.txt) | ["State of Localization"-Skript]({repo_root}Localization/Code/StateOfLocalization/requirements.txt)
+- Abhängigkeiten der [Mac Mouse Fix Feedback Assistant](https://noah-kergli.github.io/mac-mouse-fix-feedback-assistant/) Web-App [hier](https://github.com/noah-kergli/mac-mouse-fix-feedback-assistant/blob/master/package.json)
+- Abhängigkeiten der [Mac Mouse Fix Website](https://noah-kergli.github.io/mac-mouse-fix-website/) findest du [hier](https://github.com/noah-kergli/mac-mouse-fix-website/blob/main/package.json)

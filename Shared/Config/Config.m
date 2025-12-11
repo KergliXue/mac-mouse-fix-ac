@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // Config.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2019
-// Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2019
+// Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -451,7 +451,7 @@ NSDictionary *_Nullable _readDictPlist(NSURL *url, bool mutable, NSError * __aut
     /// Macros
     {
         /// `fail` macro – Crash if something goes wrong
-        ///     - [Aug 2025] We don't wanna accidentally reset the users config due to random file-read error – I think that caused the `Config Reset After Update` / `Config Reset Intermittently` bugs (https://github.com/noah-nuebling/mac-mouse-fix/issues/1510)
+        ///     - [Aug 2025] We don't wanna accidentally reset the users config due to random file-read error – I think that caused the `Config Reset After Update` / `Config Reset Intermittently` bugs (https://github.com/noah-kergli/mac-mouse-fix/issues/1510)
         ///         Bug observations:
         ///             - I got like 3 reports about random config-resets recently after 3.0.6, but never before. That's weird. Made me think that new macOS version triggered it. (Those reports caused us to rewrite this code in commit 5858a47a3)
         ///             ... But while debugging the SLSGetLastUsedKeyboardID crashes on Catalina and Big Sur I think I encountered it a a few times. But then I couldn't reproduce it anymore. I think I set the click actions to `Command-,`, `Back`, and `Forward`. And then I made it crash and stuff and the settings got reset a few times. I decided to debug `SLSGetLastUsedKeyboardID` first, but then afterwards (I think i restarted) I couldn't reproduce it anymore.

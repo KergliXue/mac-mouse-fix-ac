@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // CoolSFSymbolsFont.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2024
-// Licensed under Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2024
+// Licensed under Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -25,7 +25,7 @@
 ///  - Inside UIStrings.m, before it returns a unicode character for an SF Symbol, it asks this file whether the unicode character can be displayed - to validate correctness (only happens for debug builds.)
 ///
 /// Also see:
-/// - Discussion on this GitHub pull request by @groverlynn, which motivated and informed the new approach where we ship CoolSFSymbols.otf with the app: https://github.com/noah-nuebling/mac-mouse-fix/pull/385
+/// - Discussion on this GitHub pull request by @groverlynn, which motivated and informed the new approach where we ship CoolSFSymbols.otf with the app: https://github.com/noah-kergli/mac-mouse-fix/pull/385
 /// - The notes in the python script that generates CoolSFSymbols.otf - explains some more of the ideas and stuff.
 
 @implementation CoolSFSymbolsFont

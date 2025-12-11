@@ -5307,13 +5307,13 @@
       "shouldTranslate" : false
     },
     "pMz-a0-1UQ.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Created by Noah Nuebling\"; ObjectID = \"pMz-a0-1UQ\"; Note = \"About > Created By Label\";",
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Created by Noah kergli\"; ObjectID = \"pMz-a0-1UQ\"; Note = \"About > Created By Label\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autor - Noah Nuebling"
+            "value" : "Autor - Noah kergli"
           }
         },
         "de" : {
@@ -5325,25 +5325,25 @@
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Created by Noah Nuebling"
+            "value" : "Created by Noah kergli"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Créé par Noah Nuebling"
+            "value" : "Créé par Noah kergli"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Noah Nuebling 제작"
+            "value" : "Noah kergli 제작"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Criado por Noah Nuebling"
+            "value" : "Criado por Noah kergli"
           }
         },
         "ru" : {
@@ -5355,25 +5355,25 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Phát triển bởi Noah Nuebling"
+            "value" : "Phát triển bởi Noah kergli"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Noah Nuebling制作"
+            "value" : "Noah kergli制作"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Noah Nuebling製作"
+            "value" : "Noah kergli製作"
           }
         },
         "zh-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Noah Nuebling製作"
+            "value" : "Noah kergli製作"
           }
         }
       }

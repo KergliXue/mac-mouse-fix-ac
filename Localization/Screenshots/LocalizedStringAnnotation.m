@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // LocalizedStringAnnotation.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2024
-// Licensed under Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2024
+// Licensed under Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -171,7 +171,19 @@ static __thread bool _annotationIsTemporarilyDisabled = false; /// `__thread` in
         /// Note:
         ///     Used to also swizzle `localizedAttributedStringForKey:value:table:`, but our code never uses that method  – only available in macOS 12.0+
         
-        NSString *result = OGImpl(key, value, table);
+        /// Force English language - always use English bundle for mainBundle
+        NSString *result;
+        if ([m_self isEqual: NSBundle.mainBundle]) {
+            /// Force English bundle
+            NSBundle *englishBundle = [NSBundle bundleWithPath: [NSBundle.mainBundle pathForResource: @"en" ofType: @"lproj"] ?: @""];
+            if (englishBundle) {
+                result = [englishBundle localizedStringForKey: key value: value ?: @"" table: table];
+            } else {
+                result = OGImpl(key, value, table);
+            }
+        } else {
+            result = OGImpl(key, value, table);
+        }
         
         if (_annotationIsTemporarilyDisabled) return result;
         if (![m_self isEqual: NSBundle.mainBundle]) return result; /// The system loads tons of strings from other bundles such as `AppKit`

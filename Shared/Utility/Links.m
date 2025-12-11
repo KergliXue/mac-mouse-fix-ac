@@ -1,9 +1,9 @@
 //
 // --------------------------------------------------------------------------
 // Links.m
-// Created for Mac Mouse Fix (https://github.com/noah-nuebling/mac-mouse-fix)
-// Created by Noah Nuebling in 2024
-// Licensed under Licensed under the MMF License (https://github.com/noah-nuebling/mac-mouse-fix/blob/master/License)
+// Created for Mac Mouse Fix (https://github.com/noah-kergli/mac-mouse-fix)
+// Created by Noah kergli in 2024
+// Licensed under Licensed under the MMF License (https://github.com/noah-kergli/mac-mouse-fix/blob/master/License)
 // --------------------------------------------------------------------------
 //
 
@@ -34,7 +34,7 @@
         
         /// General
         xxx(kMFLinkID_BuyMeAMilkshake) {
-            result = redirectionServiceLink(@"buy-me-a-milkshake", nil, nil, @{ @"locale": currentLocale }); /// Note: We might want to move this link to GitHub Sponsors (https://github.com/sponsors/noah-nuebling) at some point.
+            result = redirectionServiceLink(@"buy-me-a-milkshake", nil, nil, @{ @"locale": currentLocale }); /// Note: We might want to move this link to GitHub Sponsors (https://github.com/sponsors/noah-kergli) at some point.
         }
         
         /// Non-browser links
@@ -62,7 +62,7 @@
             result = redirectionServiceLink(@"mmf-github", nil, nil, @{ @"locale": currentLocale });
         }
         xxx(kMFLinkID_Acknowledgements) {
-            result = redirectionServiceLink(@"mmf-acknowledgements", nil, nil, @{ @"locale": currentLocale }); /// https://github.com/noah-nuebling/mac-mouse-fix/blob/master/Acknowledgements.md
+            result = redirectionServiceLink(@"mmf-acknowledgements", nil, nil, @{ @"locale": currentLocale }); /// https://github.com/noah-kergli/mac-mouse-fix/blob/master/Acknowledgements.md
         }
         xxx(kMFLinkID_HelpTranslate) {
             result = redirectionServiceLink(@"mmf-localization-contribution", nil, nil, @{ @"locale": currentLocale }); /// [Jul 2025] I kinda wanna rename `mmf-localization-contribution` to `mmf-help-translate` but I'm not sure we've used it somewhere already.
@@ -73,10 +73,10 @@
             result = redirectionServiceLink(@"mmf-feedback", nil, nil, @{ @"locale": currentLocale });
         }
         xxx(kMFLinkID_FeedbackBugReport) {
-            result = redirectionServiceLink(@"mmf-feedback-bug-report", nil, nil, @{ @"locale": currentLocale }); ///  https://noah-nuebling.github.io/mac-mouse-fix-feedback-assistant/?type=bug-report
+            result = redirectionServiceLink(@"mmf-feedback-bug-report", nil, nil, @{ @"locale": currentLocale }); ///  https://noah-kergli.github.io/mac-mouse-fix-feedback-assistant/?type=bug-report
         }
         xxx(kMFLinkID_FeedbackFeatureRequest) {
-            result = redirectionServiceLink(@"mmf-feedback-feature-request", nil, nil, @{ @"locale": currentLocale }); ///  https://noah-nuebling.github.io/mac-mouse-fix-feedback-assistant/?type=feature-request
+            result = redirectionServiceLink(@"mmf-feedback-feature-request", nil, nil, @{ @"locale": currentLocale }); ///  https://noah-kergli.github.io/mac-mouse-fix-feedback-assistant/?type=feature-request
         }
         
         /// Help
@@ -117,7 +117,7 @@ static NSString *redirectionServiceLink(NSString *_Nonnull target, NSString *_Nu
     
     /// Construct a link for our 'redirection service' website.
     ///
-    /// `target` determines the destination of the redirect. Possible values are documented here: https://github.com/noah-nuebling/redirection-service
+    /// `target` determines the destination of the redirect. Possible values are documented here: https://github.com/noah-kergli/redirection-service
     /// `message` is shown in the browser window while redirecting. We usually use nil.
     /// `pageTitle` is shown inside the tab button while redirecting. We usually use nil. (The redirection service will fall back to `Mac Mouse Fix...` as of 05.09.2024)
     /// `otherQueryParams` is a dict of other url query params that apply to the given`target`.
@@ -132,7 +132,7 @@ static NSString *redirectionServiceLink(NSString *_Nonnull target, NSString *_Nu
     ///
     ///     ... which would construct the link:
     ///     ```
-    ///     https://noah-nuebling.github.io/redirection-service/?message=One%20Second...&page-title=Redirecting...&target=mailto-noah&body=aaaaa&subject=Cool%20Beans
+    ///     https://noah-kergli.github.io/redirection-service/?message=One%20Second...&page-title=Redirecting...&target=mailto-noah&body=aaaaa&subject=Cool%20Beans
     ///     ```
     ///
     ///     (Note: We should actually use the redirection service for mailto-links, since that opens a browser window, instead of opening the mail app directly.)
@@ -182,7 +182,7 @@ static NSString *redirectionServiceLink(NSString *_Nonnull target, NSString *_Nu
     }
     
     /// Construct result
-    NSString *result = stringf(@"https://redirect.macmousefix.com?message=%@&page-title=%@&target=%@%@", message, pageTitle, target, otherQueryParamsStr); //stringf(@"https://noah-nuebling.github.io/redirection-service?message=%@&page-title=%@&target=%@%@", message, pageTitle, target, otherQueryParamsStr);
+    NSString *result = stringf(@"https://redirect.macmousefix.com?message=%@&page-title=%@&target=%@%@", message, pageTitle, target, otherQueryParamsStr); //stringf(@"https://noah-kergli.github.io/redirection-service?message=%@&page-title=%@&target=%@%@", message, pageTitle, target, otherQueryParamsStr);
     
     /// Return
     return result;
